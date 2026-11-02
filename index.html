@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<script src="https://cdn.jsdelivr.net/npm/qrcode@1.5.3/build/qrcode.min.js"></script>
+	<script src="qr.js"></script>
+</head>
+<body>
+	<div id="input-box">
+	<h2>gimme that money</h2>
+	<input type="text" id="payerAddress" placeholder="username@bank">
+	<br>
+	<input type="text" id="payerName" placeholder="Your Name">
+	<br>
+	<input type="number" id="amount" placeholder="1">
+	<br>
+	<input type="text" id="txnNote" placeholder=":D">
+	<br>
+	<button id="generate">Pay</button>
+	</div>
+	<br>
+	<div id="qr-box">
+	<canvas id="qr" hidden></canvas>
+	</div>
+</body>
+</html>

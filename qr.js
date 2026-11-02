@@ -20,6 +20,10 @@ generateButton.addEventListener('click', async () => {
     alert("Minimum amount is 1.00");
     return;
   }
+  if (isNaN(amount) || amount > 5000) {
+    alert("Maximum amount is 5000");
+    return;
+  }
 
   const params = new URLSearchParams({
     pa: paInput,
